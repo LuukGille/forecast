@@ -1,0 +1,37 @@
+{
+  "name": "forecast",
+  "version": "1.0.0",
+  "description": "React weather application with webpack 4 and unit testing",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open --hot",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuukGille/forecast.git"
+  },
+  "author": "Luuk Gille",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LuukGille/forecast/issues"
+  },
+  "homepage": "https://github.com/LuukGille/forecast#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^2.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1"
+  },
+  "dependencies": {
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3"
+  }
+}
