@@ -1,8 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Weather from "./components/weather/index";
 
-const Index = () => {
-  return <div>Hello React!</div>;
+const App = () => {
+  return <Weather />;
 };
 
-ReactDOM.render(<Index />, document.getElementById("index"));
+ReactDOM.render(<App />, document.getElementById("app"));
