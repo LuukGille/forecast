@@ -1,9 +1,14 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import Weather from "./components/weather/index";
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import Navigation from './components/Navigation';
+import style from './main.scss';
 
-const App = () => {
-  return <Weather />;
-};
+class App extends Component {
+	render() {
+		return (
+			<Navigation />
+		);
+	}
+}
 
 ReactDOM.render(<App />, document.getElementById("app"));
