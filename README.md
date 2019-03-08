@@ -102,7 +102,7 @@ For this application we are using scss with BEM classes for nesting. For React y
 		margin: 0;
 		padding: 0;
 		font-family: Arial, Helvetica, sans-serif;
-		color: #555555;
+		color: $black
 	}
 
 	.navigation {

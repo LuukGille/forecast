@@ -1,0 +1,17 @@
+/* Custom, iPhone Retina */
+
+@mixin for-phone() {
+	@media only screen and ( max-width: 640px ) { @content; }
+}
+
+/* tablet Devices, Desktops */
+
+@mixin for-tablet() {
+	@media only screen and ( max-width: 992px ) { @content; }
+}
+
+/* desktop, Wide Screens */
+
+@mixin for-desktop() {
+	@media only screen and ( max-width: 1200px ) { @content; }
+}

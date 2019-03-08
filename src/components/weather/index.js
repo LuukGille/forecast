@@ -61,7 +61,6 @@ class Weather extends React.Component {
 						<div className="weather__header">
 							<div className="weather__intro">
 								<h1 className="weather__title">What is the weather this week?</h1> 
-								<p className="weather__text">Let's find out!</p>
 							</div>
 							<div className="weather__overview">
 								<p className="weather__city">{weather.name}</p>
@@ -79,6 +78,7 @@ class Weather extends React.Component {
 						<div className="weather__input">
 							<form onSubmit={(e) => this.showWeather(e)} className="weather__submit">
 								<div className="weather__form">
+								<p className="weather__text">Let's find out!</p>
 									<input className="weather__location" placeholder="Rotterdam"></input>
 									<button className="weather__button">submit</button>
 								</div>
