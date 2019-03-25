@@ -1,7 +1,7 @@
 // Weather.component.js
 import React from 'react';
-import styles from './weather.scss';
-
+import syles from './weather.scss';
+const fetch = require("node-fetch");
 
 //create a const to get the data from the API
 let API = 'http://api.apixu.com/v1/forecast.json?key=3c22566e45084cd6ba482635190703&days=7&q=rotterdam';
@@ -46,13 +46,12 @@ class Weather extends React.Component {
 		.then(response => response.json())
 		.then(data => {
 			this.setState({ weather: data.location, forecast: data.forecast.forecastday });
-			console.log(data);
 		});
 
 	}
 	render() {
 		const { weather } = this.state;
-		const { forecast} = this.state;
+		const { forecast } = this.state;
 
 		return(
 			<div className="section">

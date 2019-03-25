@@ -17,6 +17,10 @@ const CSSLoader = {
 
 module.exports = {
   entry: "./src/app.js",
+  devServer: {
+    publicPath: '/',
+    historyApiFallback: true, 
+  },
   module: {
     rules: [
       {

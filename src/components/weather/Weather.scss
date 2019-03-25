@@ -43,6 +43,7 @@
 		margin: 0 0 60px;
 
 		@include for-tablet() {
+			margin: 0 0 30px;
 			font-size: 60px;
 			line-height: 46px;
 			width: 400px;
@@ -63,7 +64,7 @@
 
 	&__overview {
 		padding: 20px;
-		width: 550px;
+		width: 590px;
 		height: 250px;
 		margin-left: 70px;
 		background-color: $opacity-blue;
@@ -71,10 +72,11 @@
 
 		@include for-tablet() {
 			margin-left: 0;
+			margin-bottom: 15px;
 		}
 
 		@include for-phone() {
-			width: 300px;
+			width: 270px;
 			height: 430px;
 			margin-bottom: 30px;
 		}
@@ -85,12 +87,14 @@
 		margin: 30px 0;
 
 		@include for-phone() {
+			font-size: 30px;
 			margin: 0;
 		}
 	}
 
 	&__weekly {
 		display: flex;
+		margin-left: -15px;
 
 		@include for-phone() {
 			width: 280px;
@@ -102,16 +106,17 @@
 	&__display {
 		height: 90px;
 		width: 80px;
-		margin: 5px;
+		margin: 8px;
 
 		@include for-phone() {
 			height: 109px;
-			width: 55px;
+			width: 70px;
 			margin: 10px;
 		}
 	}
 
 	&__days {
+		width: 70px;
 		margin: 5px 0;
 		text-align: center;
 		font-style: italic; 
@@ -119,7 +124,6 @@
 
 	&__form{
 		@include for-phone {
-			display: flex;
 			justify-content: center;
 		}
 	}
@@ -138,6 +142,24 @@
 		border: 0;
 		padding-left: 10px;
 		border-radius: 5px;
+
+		@include for-tablet {
+			height: 50px;
+			width: 400px;
+			font-size: 25px;
+			border: 0;
+			padding-left: 10px;
+			border-radius: 5px;
+		}
+
+		@include for-phone {
+			height: 50px;
+			width: 185px;
+			font-size: 20px;
+			border: 0;
+			padding-left: 10px;
+			border-radius: 5px;
+		}
 	}
 
 	&__button {
@@ -152,8 +174,26 @@
 		cursor: pointer;
 		border-radius: 5px;
 
+		&:hover {
+			background-color: $dark-gray;
+		}
+
+		&:focus {
+			background-color: $darker-gray;
+			outline:0;
+		}
+
 		@include for-phone {
-			width: 150px;
+			width: 100px;
+			height: 52px;
+			padding: 15px;
+			font-size: 15px;
+		}
+
+		@include for-tablet {
+			height: 52px;
+			padding: 15px;
+			font-size: 16px;
 		}
 	}
 }
@@ -162,4 +202,5 @@
 	font-style: italic;
 	font-size: 20px;
 	color: $red;
+	width: 300px;
 }
