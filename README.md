@@ -9,10 +9,9 @@
 - [How to run the Project](#how-to-run-the-project)
 - [Folder Structure](#folder-structure)
 - [Available Scripts](#available-scripts)
-  - [npm run dev](#npm-run-dev)
   - [npm run build](#npm-run-build)
-  - [npm run start](#npm-run-start)
-  - [npm run test](#npm-run-test)
+  - [npm start](#npm-start)
+  - [npm test](#npm-test)
 - [Using CSS](#using-css)
 - [Adding Components](#adding-components)
 - [Fetching Data](#fetching-data)
@@ -67,7 +66,12 @@ Out of the box, we get:
 
 In the project directory, you can run:
 
-### `npm run dev`
+### `npm run build`
+
+Builds the app for production to the `.dist` folder.<br>
+It correctly bundles the React and styling in production mode and optimizes the build for the best performance.
+
+### `npm start`
 
 Runs the app in the development mode.<br>
 Open [http://localhost:8080](http://localhost:8080) to view it in the browser.
@@ -75,17 +79,7 @@ Open [http://localhost:8080](http://localhost:8080) to view it in the browser.
 The page will reload if you make edits.<br>
 You will also see any errors in the console.
 
-### `npm run build`
-
-Builds the app for production to the `.dist` folder.<br>
-It correctly bundles the React and styling in production mode and optimizes the build for the best performance.
-
-### `npm run start`
-
-Starts the application in production mode.
-The application should be compiled with `dist build` first.
-
-### `npm run test`
+### `npm test`
 
 Will run all your test files.
 You could run for example `run test navigation.test.js --watch` for a 
