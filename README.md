@@ -23,12 +23,11 @@
 
 - run `npm install` 
 
-- run `npm run dev`
+- run `npm start`
 
 ## How to run the Project for Production?
 
 - run `npm run build`
-- run `npm start`
 
 ## Folder Structure
 
